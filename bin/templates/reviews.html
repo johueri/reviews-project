@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Endangered Animals Reviews</title>
+</head>
+
+	<body>
+		<header>
+			<h1>A list of endangered animals</h1>
+		</header>
+		
+		<div th:each="review: ${reviews}">
+			<p>
+				<a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+			</p>
+		</div>
+	</body>
+</html>
