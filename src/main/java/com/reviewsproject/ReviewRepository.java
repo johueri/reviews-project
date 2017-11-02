@@ -12,19 +12,39 @@ public class ReviewRepository {
 	protected Map<Long, Review> reviews = new HashMap<Long, Review> ();
 	
 	public ReviewRepository() {
+			
+		Review review1 = new Review(00000,"	Star Trek: The Motion Picture (1979)","/images/StarTrek1large.jpg", "Series: TOS", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+			+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
+	Review review2 = new Review(11111, "Star Trek II: The Wrath of Khan (1982)", "/images/StarTrek2Large.jpg", "Series: TOS", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+				+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
+		Review review3 = new Review(22222,"Star Trek IV: The Voyage Home (1986)", "/images/StarTrek3Large.jpg", "Series: TOS", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+				+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
+		Review review4 = new Review(33333, "Star Trek Generations (1994)", "/images/StarTrek4Large.jpg", "TNG", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+				+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
+		Review review5 = new Review(44444, "Star Trek: First Contact (1996)", "/images/StarTrek5Large.jpg", "TNG", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+				+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
+		Review review6 = new Review(55555, "Star Trek: Insurrection (1998)", "/images/StarTrek6Large.jpg", "TNG", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				+ "Nullam vehicula augue ac pulvinar blandit. In nec dictum ligula, ut bibendum eros. In egestas pulvinar velit eu accumsan."
+				+ "Cras ut diam vitae mauris auctor pharetra."
+				+"Aenean id tortor ut mauris blandit ultrices. Aenean malesuada placerat libero nec imperdiet.");
 		
-		Review review1 = new Review(00000,"Pangolins","/images/Pangolin.jpg", "Endangered Animal", "This animal is too cute do die."
-				+ " I think it's gonna make it.");
-		Review review2 = new Review(11111, "PhillipineEagles", "/images/PhillipineEagles.jpg", "Endangered Animal", "This animal is a pretty boy."
-				+ "and is destined to die because it never stops looking in the mirror");
-		Review review3 = new Review(22222,"Yunnan Snub-Nosed Monkey", "/images/YunnanSnubNosedMonkey.jpg", "Enangered Animal", "This monkey is so ugly it's cute. It'll rebound.");
-		Review review4 = new Review(33333, "Saiga", "/images/Saiga.jpg", "Endangered Animal", "Apparently mankind is responsible for it's endangered status."
-				+ "Given the future prospects of humans, I'd say this animal is bound to recover.");
 		
 		reviews.put(review1.getId(), review1);
 		reviews.put(review2.getId(), review2);
 		reviews.put(review3.getId(), review3);
 		reviews.put(review4.getId(), review4);
+		reviews.put(review5.getId(), review5);
+		reviews.put(review6.getId(), review6);
 	}
 	
 	public Collection<Review> findAll(){

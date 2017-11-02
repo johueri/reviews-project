@@ -4,17 +4,19 @@
 
 <head>
 	<title>An Endangered Animal</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css"/>
 </head>
 
 	<body>
 	
 		<header>
-			<h1> An Endangered Animal </h1>
+			<h1> Star Trek Movie Review </h1>
 		</header>
 	
 		<div>
 			<h2 th:text="${review.title}"></h2>
-			<h2 th:text="${review.content}"></h2>
+			<p th:text="${review.content}"></p>
+			<img th:src="${review.imageUrl}"/>
 			<a href="http://localhost:8080/reviews">Back to home</a>
 		</div>
 	
